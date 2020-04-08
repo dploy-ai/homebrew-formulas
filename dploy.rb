@@ -11,7 +11,7 @@ class Dploy < Formula
   bottle :unneeded
 
   def install
-    ENV['DPLOY_HOST'] = "https://api.dev.dinosl1ke1cecream.dploy.ai/"
+    system "DPLOY_HOST='https://api.dev.dinosl1ke1cecream.dploy.ai/'", "dploy"
     bin.install "dploy"
   end
 end
