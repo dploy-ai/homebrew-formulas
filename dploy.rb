@@ -12,7 +12,6 @@ class Dploy < Formula
 
   def install
     ENV['DPLOY_HOST'] = "https://api.dev.dinosl1ke1cecream.dploy.ai/"
-    system echo ENV['DPLOY_HOST']
     bin.install "dploy"
   end
 end
