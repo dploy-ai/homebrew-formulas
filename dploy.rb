@@ -15,8 +15,7 @@ class Dploy < Formula
   end
 
   def post_install
-    system "alias dploy=\'DPLOY_HOST=\"https://api.dev.dinosl1ke1cecream.dploy.ai/\" dploy\'"
-    system "source ~/.bash_profile"
-    system "source ~/.zsh"
+    system "echo \nalias dploy=\'DPLOY_HOST=\"https://api.dev.dinosl1ke1cecream.dploy.ai/\" dploy\'" >> ~/.bash_profile
+    system "echo \nalias dploy=\'DPLOY_HOST=\"https://api.dev.dinosl1ke1cecream.dploy.ai/\" dploy\'" >> ~/.zshrc
   end
 end
