@@ -16,6 +16,6 @@ class Dploy < Formula
 
   def post_install
     ENV["DPLOY_HOST"] = '"https://api.dev.dinosl1ke1cecream.dploy.ai/"dploy'
-    system "source", "DPLOY_HOST='https://api.dev.dinosl1ke1cecream.dploy.ai/'"
+    system "export DPLOY_HOST='https://api.dev.dinosl1ke1cecream.dploy.ai/'"
   end
 end
