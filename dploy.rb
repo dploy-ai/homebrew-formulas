@@ -2,10 +2,8 @@ class Dploy < Formula
   desc "Deployment Tool"
   homepage "https://github.com/dploy-ai"
   url "http://temp-cli.storage.googleapis.com/dploy"
-  sha256 ""
+  sha256 "" # Don't need integration test because we don't use versions for now
   version "latest"
-
-  # depends_on "curl"
 
   # Don't need to compile / Already compiled
   bottle :unneeded
@@ -14,10 +12,8 @@ class Dploy < Formula
     bin.install "dploy"
   end
 
-  def post_install
-    system "chmod +x ~/.bash_profile"
-    system "chmod +x ~/.zshrc"
-    system "echo alias dploy=\'DPLOY_HOST=\"https://api.dev.dinosl1ke1cecream.dploy.ai/\" dploy\' >> ~/.bash_profile"
-    system "echo alias dploy=\'DPLOY_HOST=\"https://api.dev.dinosl1ke1cecream.dploy.ai/\" dploy\' >> ~/.zshrc"
-  end
+  # def post_install
+  #   system "echo alias dploy=\'DPLOY_HOST=\"https://api.dev.dinosl1ke1cecream.dploy.ai/\" dploy\' >> ~/.bash_profile"
+  #   system "echo alias dploy=\'DPLOY_HOST=\"https://api.dev.dinosl1ke1cecream.dploy.ai/\" dploy\' >> ~/.zshrc"
+  # end
 end
