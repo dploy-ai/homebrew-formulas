@@ -2,7 +2,7 @@ class Dploy < Formula
   desc "Deployment Tool"
   homepage "https://github.com/dploy-ai"
   url "http://temp-cli.storage.googleapis.com/dploy"
-  sha256 "no_check"
+  sha256 ""
   version "latest"
 
   # depends_on "curl"
