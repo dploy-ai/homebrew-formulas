@@ -14,8 +14,10 @@ class Dploy < Formula
     bin.install "dploy"
   end
 
-  # def post_install
-  #   system "echo alias dploy=\'DPLOY_HOST=\"https://api.dev.dinosl1ke1cecream.dploy.ai/\" dploy\' >> ~/.bash_profile"
-  #   system "echo alias dploy=\'DPLOY_HOST=\"https://api.dev.dinosl1ke1cecream.dploy.ai/\" dploy\' >> ~/.zshrc"
-  # end
+  def post_install
+    system "chmod +x ~/.bash_profile"
+    system "chmod +x ~/.zshrc"
+    system "echo alias dploy=\'DPLOY_HOST=\"https://api.dev.dinosl1ke1cecream.dploy.ai/\" dploy\' >> ~/.bash_profile"
+    system "echo alias dploy=\'DPLOY_HOST=\"https://api.dev.dinosl1ke1cecream.dploy.ai/\" dploy\' >> ~/.zshrc"
+  end
 end
