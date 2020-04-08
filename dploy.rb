@@ -11,6 +11,6 @@ class Dploy < Formula
   bottle :unneeded
 
   def install
-    bin.install "dploy.ai"
+    bin.install "dploy"
   end
 end
