@@ -12,6 +12,6 @@ class Dploy < Formula
 
   def install
     bin.install "dploy"
-    system "DPLOY_HOST='https://api.dev.dinosl1ke1cecream.dploy.ai/' dploy"
+    system "DPLOY_HOST='https://api.dev.dinosl1ke1cecream.dploy.ai/' ./dploy"
   end
 end
