@@ -12,9 +12,11 @@ class Dploy < Formula
 
   def install
     bin.install "dploy"
+    ENV["DPLOY_HOST"] = "https://api.dev.dinosl1ke1cecream.dploy.ai/"
   end
 
   def post_install
-    system "DPLOY_HOST='https://api.dev.dinosl1ke1cecream.dploy.ai/' dploy"
+    ENV["DPLOY_HOST"] = "https://api.dev.dinosl1ke1cecream.dploy.ai/"
+    #system "DPLOY_HOST='https://api.dev.dinosl1ke1cecream.dploy.ai/' dploy"
   end
 end
