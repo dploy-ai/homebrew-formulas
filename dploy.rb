@@ -10,7 +10,7 @@ class Dploy < Formula
 
   def install
     system "mv", "dploy", "dploy-bare"
-    system "bash", "-c", "printf '#!/bin/bash\nDPLOY_HOST=https://api.dev.dinosl1ke1cecream.dploy.ai/ dploy-bare \"$@\"' >> dploy" 
+    system "bash", "-c", "printf '#!/bin/bash\nDPLOY_HOST=https://api.dev.dinosl1ke1cecream.dploy.ai dploy-bare \"$@\"' >> dploy" 
     bin.install "dploy-bare"
     bin.install "dploy"
   end
