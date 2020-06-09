@@ -9,7 +9,8 @@ class Dploy < Formula
   bottle :unneeded
 
   def install
-    bin.install "dploy"
+    bin.install "dploy-darwin-amd64"
+    mv bin/"dploy-darwin-amd64", bin/"dploy"
   end
 
   def caveats
