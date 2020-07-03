@@ -1,12 +1,12 @@
 class Dploy < Formula
   def self.latest_dploy_revision
     @latest_dploy_revision ||= begin
-      DateTime.parse(`curl --silent --HEAD 'https://storage.googleapis.com/temp-cli/dploy-darwin-amd64.tar.gz' | grep 'Last-Modified:'`.split(' ', 2).last.strip).to_s
+      DateTime.parse(`curl --silent --HEAD 'http://storage.googleapis.com/temp-cli/dploy-darwin-amd64.tar.gz' | grep 'Last-Modified:'`.split(' ', 2).last.strip).to_s
     end
   end
 
   def self.sha256_checksum
-    `curl --silent 'https://storage.googleapis.com/temp-cli/dploy-darwin-amd64.tar.gz.sha256'`.split.first
+    `curl --silent 'http://storage.googleapis.com/temp-cli/dploy-darwin-amd64.tar.gz.sha256'`.split.first
   end
 
   desc "dploy.ai CLI"
