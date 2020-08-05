@@ -11,7 +11,7 @@ class Dploy < Formula
 
   desc "dploy.ai CLI"
   homepage "https://dploy.ai/"
-  url "http://temp-cli.storage.googleapis.com/dploy-darwin-amd64.tar.gz"
+  url "http://dployai-cli.storage.googleapis.com/dploy-darwin-amd64-dev.tar.gz"
   sha256 sha256_checksum
   version "0.1-#{latest_dploy_revision}"
 
