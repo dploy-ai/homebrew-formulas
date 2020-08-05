@@ -1,7 +1,7 @@
 class Dploy < Formula
   def self.latest_dploy_revision
     @latest_dploy_revision ||= begin
-      DateTime.parse(`curl --silent --HEAD 'http://storage.googleapis.com/temp-cli/dploy-darwin-amd64.tar.gz' | grep 'Last-Modified:'`.split(' ', 2).last.strip).to_s
+      DateTime.parse(`curl --silent --HEAD 'http://storage.googleapis.com/dployai-cli/dploy-darwin-dev.tar.gz' | grep 'Last-Modified:'`.split(' ', 2).last.strip).to_s
     end
   end
 
